@@ -15,7 +15,7 @@ app.post("/legal-ai", async (req, res) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer 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}`,
+        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
       },
       body: JSON.stringify({
         model: "gpt-4o-mini",
